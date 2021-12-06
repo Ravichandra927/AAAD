@@ -45,7 +45,7 @@ class AboutPaymentActivity : AppCompatActivity() {
 
         if (nextTry != null) {
             val nextDownloadTv = findViewById<TextView>(R.id.next_time_download)
-            val nextPossible = (nextTry + 2629743000 )
+            val nextPossible = (nextTry + 3000 )
             val dateFormat = DateFormat.getDateFormat(applicationContext)
             val date: String = dateFormat.format(nextPossible)
             nextDownloadTv.text = getString(R.string.next_download_available, date)
